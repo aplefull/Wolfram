@@ -1,0 +1,81 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.2' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      2353,         73]
+NotebookOptionsPosition[      1934,         58]
+NotebookOutlinePosition[      2283,         73]
+CellTagsIndexPosition[      2240,         70]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"dir", " ", "=", " ", 
+     RowBox[{"InputString", "[", "]"}]}], ";"}], "\n", 
+   RowBox[{
+    RowBox[{"file", " ", "=", " ", 
+     RowBox[{"Import", "[", 
+      RowBox[{
+       RowBox[{"ToString", "[", "dir", "]"}], "<>", "\"\<\\\\*.jpeg\>\""}], 
+      "]"}]}], ";"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+    "CreateDirectory", "[", "\"\<C:\\\\Users\\\\User\\\\Desktop\\\\test\>\"", 
+     "]"}], ";"}], "\n", 
+   RowBox[{"For", "[", " ", 
+    RowBox[{
+     RowBox[{"i", " ", "=", " ", "1"}], ",", " ", 
+     RowBox[{"i", "\[LessEqual]", 
+      RowBox[{"Length", "[", "file", "]"}]}], ",", 
+     RowBox[{
+      RowBox[{"Export", "[", 
+       RowBox[{
+        RowBox[{
+        "\"\<C:\\\\Users\\\\User\\\\Desktop\\\\test\\\\tesst (\>\"", " ", "<>", 
+         RowBox[{"ToString", "[", "i", "]"}], "<>", "\"\<).png\>\""}], ",", 
+        RowBox[{"Take", "[", 
+         RowBox[{"file", ",", 
+          RowBox[{"{", "i", "}"}]}], "]"}]}], "]"}], ";", 
+      RowBox[{"i", "++"}]}]}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.7611214575179114`*^9, 3.7611214686881523`*^9}, 
+   3.7611215075583305`*^9},ExpressionUUID->"3df6ad49-a997-4cd2-ab75-\
+9b7924a0a23d"],
+
+Cell["", "PageBreak",
+ PageBreakBelow->True,ExpressionUUID->"326ff3ea-fa90-403f-a773-f55f58f0b7ea"]
+},
+WindowSize->{759, 813},
+WindowMargins->{{426, Automatic}, {-60, Automatic}},
+FrontEndVersion->"11.2 for Microsoft Windows (64-bit) (September 10, 2017)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 1270, 33, 181, "Input",ExpressionUUID->"3df6ad49-a997-4cd2-ab75-9b7924a0a23d"],
+Cell[1831, 55, 99, 1, 4, "PageBreak",ExpressionUUID->"326ff3ea-fa90-403f-a773-f55f58f0b7ea",
+ PageBreakBelow->True]
+}
+]
+*)
+
